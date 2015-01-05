@@ -1,0 +1,74 @@
+body {
+	margin: 0 auto;
+	width: 95%;
+	font: 14px/21px verdana, georgia, serif;
+}
+
+h1 {
+	font: 35px/42px Helvetica, "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+}
+
+h2.header {
+    font: 28px/35px Helvetica, "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+    margin: 28px auto 10px auto;
+}
+
+hr.header {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 28px;
+}
+
+.tag-list {
+	margin: 7px 0 28px 0;
+	padding-top: 1px;
+	overflow: hidden
+}
+
+.tag-list-item {
+	float: left;
+	margin: 1px 10px 10px 0
+}
+
+.tag-list-item a,.tag-list-item a:visited {
+	padding: 4px 6px;
+	background: #fff;
+	color: #505050;
+	text-decoration: none;
+	font: 12px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	border: 1px solid #cecece
+}
+
+.tag-list-item a.pressed {
+	color: #e6e6e6;
+	background: #646464;
+	cursor: pointer
+}
+
+.tag-label-list {
+}
+
+.tag-label-list:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tag-label-item {
+    float: left;
+    margin: 1px 10px 10px 0;
+    padding: 4px 6px;
+    background: #eee;
+    color: #505050;
+    font: 12px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.tag-label-heading {
+    float: left;
+    margin: 1px 10px 10px 0;
+    padding: 4px 0;
+    font: 12px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #505050;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Filter by tag example</title>
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+
+<link href="css/vendor/normalize.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="container-1">
+		<h1 id="container-1-heading">Filter by tag - section 1</h1>
+
+		<section id="link1" data-filterer="bar1" data-tag="link 1">
+			<header>
+				<h1>Title 1</h1>
+				<time datetime="2014-10-24">Last updated: 2014-10-24</time>
+			</header>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+				do eiusmod tempor incididunt.</p>
+		</section>
+
+        <h2 class="header" data-filterer="bar1" data-tag="always-hide">Header 1</h2>
+        <hr class="header" data-filterer="bar1" data-tag="always-hide"/>
+
+        <section id="link2" data-filterer="bar1" data-tag="link 1, link 2">
+			<header>
+				<h1>Title 2</h1>
+				<time datetime="2013-06-24">Last updated: 2013-06-24</time>
+			</header>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+				do eiusmod tempor incididunt.</p>
+		</section>
+
+		<section id="link3" data-filterer="bar1" data-tag="link 2, link 3">
+			<header>
+				<h1>Title 3</h1>
+				<time datetime="2014-01-17">Last updated: 2014-01-17</time>
+			</header>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+				do eiusmod tempor incididunt.</p>
+		</section>
+
+		<section id="link4" data-filterer="bar1" data-tag="link 1">
+			<header>
+				<h1>Title 4</h1>
+				<time datetime="2014-10-15">Last updated: 2014-10-15</time>
+			</header>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+				do eiusmod tempor incididunt.</p>
+		</section>
+	</div>
+
+    <div id="container-2">
+        <h1 id="container-2-heading">Filter by tag - section 2</h1>
+
+        <section id="link5" data-filterer="bar2" data-tag="link 1, link 2">
+            <header>
+                <h1>Title 1</h1>
+                <time datetime="2014-10-24">Last updated: 2014-10-24</time>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt.</p>
+        </section>
+
+        <section id="link6" data-filterer="bar2" data-tag="link 2">
+            <header>
+                <h1>Title 2</h1>
+                <time datetime="2013-06-24">Last updated: 2013-06-24</time>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt.</p>
+        </section>
+
+        <section id="link7" data-filterer="bar2" data-tag="link 3">
+            <header>
+                <h1>Title 3</h1>
+                <time datetime="2014-01-17">Last updated: 2014-01-17</time>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt.</p>
+        </section>
+
+        <section id="link8" data-filterer="bar2" data-tag="link 3, link 4">
+            <header>
+                <h1>Title 4</h1>
+                <time datetime="2014-10-15">Last updated: 2014-10-15</time>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt.</p>
+        </section>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script>window._ || document.write('<script src="js/vendor/underscore.min.js"><\/script>')</script>
+
+    <!--<script src="js/filter-by-tag.js"></script>-->
+    <script src="js/filter-by-tag.js"></script>
+
+	<script>
+		var bar1 = new filterByTag.Filterer({
+			buttonLabelShowAll : 'Visa alla',
+            tagLabelHeading : 'Taggar:',
+            whichFilterer : 'bar1',
+			placeAfterElem : '#container-1-heading'
+		});
+		bar1 = bar1;	// silence jshint unused variable warning
+
+        var bar2 = new filterByTag.Filterer({
+            buttonLabelShowAll : 'Visa alla',
+            tagLabelHeading : 'Taggar:',
+            whichFilterer : 'bar2',
+            placeAfterElem : '#container-2-heading'
+        });
+        bar2 = bar2;	// silence jshint unused variable warning
+	</script>
+</body>
+
+</html>
