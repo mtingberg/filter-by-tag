@@ -1,0 +1,34 @@
+{
+  "name": "filter-by-tag",
+  "version": "0.9.0",
+  "description": "Automatically generate a filter toolbar from data tags in the html content",
+  "main": "Gruntfile.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "matchdep": "^0.3.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "karma": "^0.12.31",
+    "grunt-karma": "^0.9.0",
+    "mocha": "^2.1.0",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-sinon-chai": "^0.2.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-mocha-reporter": "^0.3.1",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-connect": "^0.9.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "author": "Magnus Tingberg",
+  "license": "MIT"
+}
