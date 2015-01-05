@@ -1,0 +1,8 @@
+node_modules/
+bower_components/
+.idea/
+js/vendor/
+*.js.map
+/filter-by-tag.js
+/filter-by-tag.min.js
+example/js/
